@@ -2,7 +2,12 @@
 
 A deep learning system that identifies plant diseases from leaf photographs and provides treatment recommendations. Built with DenseNet121 (transfer learning) and served via a Flask web application.
 
-![Demo](PlantDiseaseDetectionDemo.gif)
+## Demo
+
+<video width="100%" controls autoplay muted>
+  <source src="https://github.com/Aishwarya2629/plant-disease-detection/releases/download/v1.0/PlantDiseaseDetectionDemo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
