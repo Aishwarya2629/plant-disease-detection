@@ -4,7 +4,7 @@ A deep learning system that identifies plant diseases from leaf photographs and 
 
 ## Demo
 
-![Demo](PlantDiseaseDetectionDemo.gif)
+![Demo](PlantDiseaseDetectionDemo .gif)
 
 ---
 
