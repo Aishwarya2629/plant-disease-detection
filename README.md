@@ -4,10 +4,7 @@ A deep learning system that identifies plant diseases from leaf photographs and 
 
 ## Demo
 
-<video width="100%" controls autoplay muted>
-  <source src="https://github.com/Aishwarya2629/plant-disease-detection/releases/download/v1.0/PlantDiseaseDetectionDemo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![WatchDemo Video](https://img.shields.io/badge/▶%20Watch%20Demo-MP4-blue?style=for-the-badge&logo=github)](https://github.com/Aishwarya2629/plant-disease-detection/releases/tag/demo)
 
 ---
 
