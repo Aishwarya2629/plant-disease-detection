@@ -1,10 +1,29 @@
 # 🌿 Plant Disease Detection Using DenseNet
 
-A deep learning system that identifies plant diseases from leaf photographs and provides treatment recommendations. Built with DenseNet121 (transfer learning) and served via a Flask web application.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Keras](https://img.shields.io/badge/Keras-DeepLearning-red)
+![DenseNet121](https://img.shields.io/badge/Model-DenseNet121-success)
+![Flask](https://img.shields.io/badge/Backend-Flask-black)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+A deep learning system that identifies plant diseases from leaf photographs and provides treatment recommendations using **DenseNet121 transfer learning**. The model classifies **44 disease and healthy plant conditions across 14 crops** and is deployed through a Flask web application.
 
 ## Demo
 
 ![Demo](PlantDiseaseDetectionDemo.gif)
+
+---
+
+## ✨ Key Features
+
+- Detects diseases across **14 crop species**
+- Supports **44 disease and healthy classes**
+- DenseNet121 transfer learning for high classification accuracy
+- Automated treatment recommendation generation
+- Flask-based web interface for real-time predictions
+- Image preprocessing and augmentation pipeline
+- Interactive disease prediction demo
 
 ---
 
@@ -84,6 +103,54 @@ DenseNet (Densely Connected Convolutional Network) connects each layer to every 
 | Output classes | 44 |
 
 ---
+
+# 📊 Performance
+
+The model was evaluated on a held-out validation dataset after transfer learning and fine-tuning.
+
+| Metric | Value |
+|--------|------:|
+| Test Accuracy | **99.27%** |
+| Test Loss | **0.0202** |
+| Precision (Macro Avg.) | **0.99** |
+| Recall (Macro Avg.) | **0.99** |
+| F1-Score (Macro Avg.) | **0.99** |
+| Number of Classes | **44** |
+
+### Evaluation Methodology
+
+The model was evaluated using a held-out validation dataset consisting of images from **44 disease and healthy plant classes**.
+
+Evaluation included:
+
+- Test Accuracy
+- Cross-Entropy Loss
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- Classification Report
+
+Training strategy included:
+
+- Transfer Learning with ImageNet-pretrained DenseNet121
+- Fine-tuning after classifier warm-up
+- Data Augmentation
+- EarlyStopping
+- ReduceLROnPlateau
+
+### Classification Report
+
+The trained model achieved a **macro-average Precision, Recall and F1-score of 0.99**, demonstrating consistently strong performance across all disease categories.
+
+### Confusion Matrix
+
+<p align="center">
+<img src="images/confusion_matrix.png" width="850">
+</p>
+
+> The confusion matrix shows very few misclassifications, primarily among visually similar diseases.
+
 
 ## Dataset
 
@@ -229,6 +296,10 @@ Based on the [PlantVillage Dataset](https://plantvillage.psu.edu/) (Penn State U
 
 ---
 
-## Author
+## 👩‍💻 Author
 
-**Aishwarya** — Built as part of Infosys Springboard Internship, 2024.
+**Aishwarya Bazzurla**
+
+Software Engineer | AI & Backend Engineering
+
+Built during the Infosys Springboard AI Internship (2024).
