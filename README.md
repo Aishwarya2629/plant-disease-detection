@@ -169,6 +169,10 @@ The model was trained on Google Colab with the dataset stored in Google Drive.
 
 ```
 PlantDiseaseDetection/
+├── images/
+    ├── confusion_matrix.png
+    ├── training_accuracy.png
+    ├── training_loss.png
 ├── PlantDiseaseDetectionUsingDenseNet_Final.ipynb  # Training notebook (run on Google Colab)
 ├── Flask.ipynb                                     # Flask web app for inference
 ├── leaf_detection_densenet_model.h5                # Trained model weights
